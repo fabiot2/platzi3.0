@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOKEPON</title>
+    <script src="./js/codigo.js"></script>
+
+</head>
+<body>
+    <h1>MOKEPON! 🔥💧🌱</h1>
+
+    <section class="" id="seleccionMascotas">
+        <h2>Elije tu mascota:</h2>
+
+        <label for="hipodoge">Hipodoge -> Agua</label>
+        <input type="radio" id="hipodoge" name="mascota" value=""> <br>
+
+        <label for="capipepo">Capipepo -> Tierra</label>
+        <input type="radio" id="capipepo" name="mascota" value=""> <br>
+
+        <label for="ratigueya">Ratigueya -> Fuego</label>
+        <input type="radio" id="ratigueya" name="mascota" value=""> <br>
+
+        <label for="langostelvis">Langostelvis -> Agua y Fuego</label>
+        <input type="radio" id="langostelvis" name="mascota" value=""><br>
+
+        <label for="tucapalma">Tucapalma -> Agua y Tierra</label>
+        <input type="radio" id="tucapalma" name="mascota" value=""><br>
+
+        <label for="pydos">Pydos -> Tierra y Fuego</label>
+        <input type="radio" id="pydos" name="mascota" value="">
+        <br>
+        <br>
+        <button id="boton-mascota">Seleccionar</button>
+
+    </section>
+
+    <section class="" id="seleccionAtaque">
+        <h2>Elije el ataque</h2>
+
+        <p>Tu mascota tiene <span id="contadorVidaMascota">3</span> vidas</p>
+        <p>La mascota Enemiga <span id="contadorVidaMascotaEnemiga">3</span> vidas</p>
+        
+        
+        <p>
+                <button id="botonFuego">Fuego 🔥</button>
+                <button id="botonAgua">Agua 💧</button>
+                <button id="botonTierra">Tierra 🌱</button>
+        </p>
+    </section>
+
+    <section class="" id="mensajes">
+        <p>Tu mascota atacó con <span>Fuego</span>, la mascota del enemigo atacó con <span>Tierra</span> - <span>Ganaste</span></p>
+    </section>
+    <section id="reiniciar">
+                <button id="boton-reiniciar">Reiniciar</button>
+    </section>
+
+</body>
+</html>
