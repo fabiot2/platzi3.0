@@ -25,9 +25,6 @@ function iniciarJuego() {
 
     let botonReiniciar = document.getElementById('boton-reiniciar')
     botonReiniciar.addEventListener('click', reiniciarJuego)
-    
-    
-
 
 }
 
