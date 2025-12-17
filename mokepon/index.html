@@ -62,9 +62,28 @@
         <h2>2. Elije el ataque</h2>
 
         <div class="ataqueMascota-Container">
+            
+            
+            <div class="seccion" id="mensajes">
+                 <p id="resultado">Mucha suerte</p>
+                <button id="boton-reiniciar" disabled>Reiniciar</button>           
+            </div>
+            
             <div class="vidaContainer">          
-                <p>Tu mascota <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
-                <p>La mascota Enemiga <span id="mascota-enemigo"></span> <span id="vidas-enemigo">3</span> vidas</p>
+
+                <div>
+                    <p id="vidas-jugador">3</p>
+                    <p id="mascota-jugador"></p>
+                    <div id="ataques-del-jugador"></div>                
+                </div>
+
+                <div>
+                    <p id="vidas-enemigo">3</p>
+                    <p id="mascota-enemigo"></p>
+                    <div id="ataques-del-enemigo"></div>
+                </div>
+
+
             </div>
             
             <p class="ataqueMacotaBoton">
@@ -72,17 +91,12 @@
                     <button id="boton-agua">Agua <span class="ataqueIcono">💧</span></button>
                     <button id="boton-tierra">Tierra <span class="ataqueIcono">🌱</span></button>
             </p>
+   
+
         </div>
     </section>
+   
 
-    <section class="seccion" id="mensajes">
-
-
-    </section>
-
-    <section id="reiniciar">
-                <button id="boton-reiniciar" disabled>Reiniciar</button>
-    </section>
 
 </body>
 </html>
