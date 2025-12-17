@@ -186,6 +186,9 @@ function crearMensajeFinal(resultadoFinal) {
     let parrafo = document.createElement('p')
     parrafo.innerHTML = resultadoFinal
 
+    
+
+
     sectionMensajes.appendChild(parrafo)
 
 

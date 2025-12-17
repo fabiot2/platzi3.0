@@ -16,7 +16,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     background-color: powderblue;
     color: rgb(0, 8, 121);
 }
@@ -97,8 +96,54 @@ input{
     border: none;
     border-radius: 0.4rem;
     display: block;
-    background-color: rgb(22, 33, 184);;
+    background-color: rgb(22, 33, 184);
     color: white;
     font-size: 2rem;
     font-weight: bold;
+}
+
+.ataqueMascota-Container {
+    width: 60rem;
+
+    padding: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: start;
+    color: rgb(22, 33, 184);
+    gap: 20px;
+}
+
+.ataqueMascota-Container p {
+     gap: 20px;
+}
+
+.ataqueMacotaBoton {
+    display: flex;
+}
+
+.ataqueMascota-Container p button {
+    width: 18rem;
+    height: 20rem;
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    border-radius: 4px ;
+    background-color: rgb(0, 8, 121);  
+    text-align: center;
+    color: white;
+    font-size: 2.4rem;
+    font-weight: bold;
+
+}
+
+.vidaContainer {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+section#mensajes p {
+    text-align: center;
+    margin-block-end: 2rem;
 }
