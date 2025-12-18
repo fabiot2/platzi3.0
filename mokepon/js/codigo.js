@@ -167,7 +167,6 @@ function revisarVidas() {
     }
 }
 
-
 function crearMensaje(resultado) {
 
     let sectionMensajes = document.getElementById('resultado')
@@ -188,7 +187,6 @@ function crearMensaje(resultado) {
     ataquesDelEnemigo.appendChild(nuevoAtaqueDelEnemigo)
 
 }
-
 
 function crearMensajeFinal(resultadoFinal) {
 
