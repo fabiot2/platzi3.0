@@ -22,8 +22,6 @@ body {
     color: rgb(0, 8, 121);
 }
 
-.header {
-}
 
 .tituloIconos {
     margin: auto;
@@ -46,12 +44,12 @@ body {
 }
 
 .seccion #boton-mascota {
+    margin: auto;
     margin-block-start: 2.4rem;
 }
 
 
 .cardMascota-Container {
-
     display: flex;
     flex-wrap: wrap;
     gap: 1.2rem;
@@ -62,6 +60,7 @@ body {
 
 .cardMascota {
     display: flex;
+    order: 1;
     flex-direction: column-reverse;
     width: 20rem;
     height: 34rem;
@@ -93,6 +92,7 @@ input{
 }
 
 #boton-mascota {
+    order: 2;
     width: 25rem;
     height: 5.2rem;
     border: none;
@@ -122,7 +122,7 @@ input{
     justify-content: center;
 }
 
-.ataqueMascota-Container p button {;
+.ataqueMascota-Container p button {
     width: 24%;
     height: 20rem;
     display: flex;
