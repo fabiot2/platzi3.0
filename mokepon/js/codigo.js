@@ -3,12 +3,7 @@ const seccionReiniciar = document.getElementById('boton-reiniciar')
 const botonMascotaJugador = document.getElementById('boton-mascota')
 
 const seccionarMascotaJugador = document.getElementById('seleccionMascotas')
-const inputHipodoge = document.getElementById('hipodoge')
-const inputCapipepo = document.getElementById('capipepo')
-const inputRatigueya = document.getElementById('ratigueya')
-const inputLangostelvis = document.getElementById('langostelvis')
-const inputTucapalma = document.getElementById('tucapalma')
-const inputPydos = document.getElementById('pydos')
+
 const spanMascotaJugador = document.getElementById('mascota-jugador')
 const spanMascotaEnemigo = document.getElementById('mascota-enemigo')
 
@@ -29,7 +24,12 @@ let mokepones = []
 let ataqueJugador
 let ataqueEnemigo
 let opcionDeMokepones
-
+let inputHipodoge
+let inputCapipepo
+let inputRatigueya
+let inputLangostelvis
+let inputTucapalma
+let inputPydos
 let vidasJugador = 3
 let vidasEnemigo = 3
 
@@ -80,13 +80,23 @@ function iniciarJuego() {
 
     mokepones.forEach((mokepon) => {
         opcionDeMokepones = `                
-        <input type="radio" id="${mokepon.nombre}" />
-                <label class="cardMascota" for=${mokepon.nombre}>
-                    <span class="mascotaNombre"><span class="mascotaIcono">💧</span>${mokepon.nombre}</span>
-                    <img src=${mokepon.foto} alt=${mokepon.nombre}>
-                </label>
+        <input type="radio" name="mascota" id="${mokepon.nombre}" />
+        <label class="cardMascota" for=${mokepon.nombre}>
+            <span class="mascotaNombre"><span class="mascotaIcono">💧</span>${mokepon.nombre}</span>
+            <img src=${mokepon.foto} alt=${mokepon.nombre}>
+        </label>
         `
-        contenedorTarjetas.innerHTML += opcionDeMokepones
+    
+    contenedorTarjetas.innerHTML += opcionDeMokepones
+
+    inputHipodoge = document.getElementById('Hipodoge')
+    inputCapipepo = document.getElementById('Capipepo')
+    inputRatigueya = document.getElementById('Ratigueya')
+    inputLangostelvis = document.getElementById('Langostelvis')
+    inputTucapalma = document.getElementById('Tucapalma')
+    inputPydos = document.getElementById('Pydos')
+
+
     })
 
     botonMascotaJugador.addEventListener('click', seleccionarMascotaJugador)  
@@ -236,3 +246,22 @@ function aleatorio(min, max) {
 }
 
 window.addEventListener('load', iniciarJuego)
+
+
+
+// const nombres = ["David", "Juanfer","David", "Juanes"]
+
+// for (let i = 0; i < nombres.length; i++) {
+//     console.log(nombres[i]);
+// }
+
+const persona = {
+    nombre: "David",
+    edad: 24,
+    comidaFavorita: "Hamburguesas"
+}
+
+
+for (let key in persona) {
+    console.log(key,persona[key])
+}
